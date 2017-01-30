@@ -1,3 +1,5 @@
+package mainPackage;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,12 +18,10 @@ public class user {
     public static void main(String[] args) {
         // TODO code application logic here
         CoffeeMaker myCoffeeMaker = CoffeeMaker.getInstance();
-        myCoffeeMaker.addBeans(50);
+        myCoffeeMaker.addBean(50);
         myCoffeeMaker.addWater(70);
         myCoffeeMaker.makeCoffee(10, 3);
-        myCoffeeMaker.pressOn();
-        myCoffeeMaker.pluggingPower();
-        myCoffeeMaker.pressOn();
+        myCoffeeMaker.pressOnOff();
         myCoffeeMaker.makeCoffee(5, 10);
     }
     

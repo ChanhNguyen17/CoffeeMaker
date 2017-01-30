@@ -18,27 +18,12 @@ public class OnOffButton implements IsOn {
     }
 
     @Override
-    public void turnOn() {
-        if (this.isOn) {
-            System.out.println("It is already On");
-        } else {
-            this.isOn = true;
-            System.out.println("It is now turned on");
-        }
-    }
-
-    @Override
-    public void turnOff() {
-        if (this.isOn) {
-            this.isOn = false;
-            System.out.println("It is now turned off");           
-        } else {
-            System.out.println("It is already Off");
-        }
-    }
-
-    @Override
     public boolean getIsOn() {
         return this.isOn;
+    }
+
+    @Override
+    public void pressed() {
+        this.isOn = !isOn;
     }
 }

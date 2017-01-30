@@ -10,7 +10,6 @@ package CoffeeMakerElectricComponent;
  * @author chanhnguyen
  */
 public interface IsOn {
-    public void turnOn();
-    public void turnOff();
+    public void pressed();
     public boolean getIsOn();
 }
